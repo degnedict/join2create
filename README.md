@@ -25,7 +25,7 @@ Join2Create is a Discord bot designed to facilitate JoinToCreate functionality s
     Or use the one-liner version:
 
     ```bash
-    docker run -d --name discord-bot -e BOT_TOKEN=YOUR_BOT_TOKEN_HERE -e JOINTOCREATE_CHANNEL_ID=YOUR_JOINTOCREATE_CHANNEL_ID_HERE your-gitea-hub-username/discord-bot:latest
+    docker run -d --name discord-bot -e BOT_TOKEN=YOUR_BOT_TOKEN_HERE -e JOINTOCREATE_CHANNEL_ID=YOUR_JOINTOCREATE_CHANNEL_ID_HERE git.degnedict.de/bene/join2create:latest
     ```
 
 ---
