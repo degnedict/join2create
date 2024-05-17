@@ -1,0 +1,13 @@
+{
+    "name": "join2create",
+    "version": "1.0.0",
+    "description": "Simple Discord bot with join to create feature",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "discord.js": "^14.0.0"
+    }
+  }
+  
