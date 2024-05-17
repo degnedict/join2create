@@ -1,4 +1,4 @@
-# join2create
+# join2create Discord Bot in Docker
 
 Join2Create is a Discord bot designed to facilitate JoinToCreate functionality seamlessly within your Discord channels.
 
@@ -8,9 +8,11 @@ Join2Create is a Discord bot designed to facilitate JoinToCreate functionality s
 
 2. **Invite the Bot to Your Server**: After creating the application, invite the bot to your Discord server using the OAuth2 URL provided in the Discord Developer Portal.
 
-3. **Configure Bot Parameters**:
-    - Open `docker-compose.yml` and input your bot token and channel ID.
-    - Alternatively, you can use the following Docker command:
+3. **Run in Docker**: Join2Create is containerized with Docker for easy deployment. To run the bot in Docker, follow these steps:
+   
+   - Ensure Docker is installed on your system.
+   - Open `docker-compose.yml` and input your bot token and channel ID.
+   - Alternatively, you can use the following Docker command:
 
     ```bash
     docker run -d \
@@ -25,3 +27,7 @@ Join2Create is a Discord bot designed to facilitate JoinToCreate functionality s
     ```bash
     docker run -d --name discord-bot -e BOT_TOKEN=YOUR_BOT_TOKEN_HERE -e JOINTOCREATE_CHANNEL_ID=YOUR_JOINTOCREATE_CHANNEL_ID_HERE your-gitea-hub-username/discord-bot:latest
     ```
+
+---
+
+Feel free to adjust any details to better fit your project's requirements!
