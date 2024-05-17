@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  discord-bot:
+  join2create:
     image: git.degnedict.de/bene/join2create:latest
     environment:
       - BOT_TOKEN=YourBotToken
