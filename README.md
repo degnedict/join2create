@@ -29,5 +29,3 @@ Join2Create is a Discord bot designed to facilitate JoinToCreate functionality s
     ```
 
 ---
-
-Feel free to adjust any details to better fit your project's requirements!
