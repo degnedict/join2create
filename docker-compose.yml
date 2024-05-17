@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  discord-bot:
+    image: dein-gitea-hub-username/discord-bot:latest  # Verwende das Image von deinem Gitea-Hub
+    environment:
+      - BOT_TOKEN=DEIN_BOT_TOKEN_HIER
+      - JOINTOCREATE_CHANNEL_ID=DEINE_JOINTOCREATE_CHANNEL_ID_HIER
+    restart: unless-stopped
