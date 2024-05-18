@@ -1,5 +1,5 @@
 # Verwende die neueste LTS-Version von Node.js
-FROM node:18
+FROM node:18-alpine
 
 # Erstelle und setze das Arbeitsverzeichnis
 WORKDIR /usr/src/app
