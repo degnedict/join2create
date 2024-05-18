@@ -4,7 +4,14 @@ Join2Create is a Discord bot designed to facilitate JoinToCreate functionality s
 
 ## Getting Started
 
-1. **Create a Discord Application**: Visit the [Discord Developer Portal](https://discord.com/developers/applications) and create a new application. Make sure to grant the application sufficient permissions, preferably Administrator.
+1. **Create a Discord Application**: Visit the [Discord Developer Portal](https://discord.com/developers/applications) and create a new application. Make sure to grant the application sufficient permissions! 
+
+    Scope:
+  ```Application.commands, bot```
+  
+    Bot Permissions:
+    
+    I gave it ```Admin``` but ```Manage Server```/```Manage Channels``` probably works too.
 
 2. **Invite the Bot to Your Server**: After creating the application, invite the bot to your Discord server using the OAuth2 URL provided in the Discord Developer Portal.
 
