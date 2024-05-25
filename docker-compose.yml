@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  discord-bot:
+    image: git.degnedict.de/bene/join2create:latest
+    environment:
+      - BOT_TOKEN=YOUR_TOKEN
+      - JOINTOCREATE_CHANNEL_ID=YOUR_CHANNEL_ID
+
+    restart: unless-stopped
