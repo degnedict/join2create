@@ -1,17 +1,14 @@
-# Verwende die neueste LTS-Version von Node.js
-FROM node:18-alpine
+FROM python:3.9-slim
 
-# Erstelle und setze das Arbeitsverzeichnis
-WORKDIR /usr/src/app
+# Set the working directory
+WORKDIR /app
 
-# Kopiere package.json und package-lock.json (falls vorhanden)
-COPY package*.json ./
+# Copy the requirements.txt and the script to the container
+COPY requirements.txt .
+COPY bot.py .
 
-# Installiere die Abhängigkeiten
-RUN npm install
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Kopiere den Rest des Anwendungsverzeichnisses
-COPY . .
-
-# Definiere die Startkommandozeile für den Container
-CMD [ "npm", "start" ]
+# Run the bot
+CMD ["python", "bot.py"]

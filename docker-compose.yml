@@ -1,9 +1,0 @@
-version: '3.8'
-
-services:
-  join2create:
-    image: git.degnedict.de/bene/join2create:latest
-    environment:
-      - BOT_TOKEN=YourBotToken
-      - JOINTOCREATE_CHANNEL_ID=Your-Channel-ID
-    restart: unless-stopped
