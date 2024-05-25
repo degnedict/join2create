@@ -26,7 +26,6 @@ async def on_voice_state_update(member, before, after):
         await member.move_to(new_channel)
 
     if before.channel and len(before.channel.members) == 0 and before.channel.id != join_to_create_channel_id:
-        # Check if the channel was created by the bot by checking its name
         if before.channel.name.startswith('🔊'):
             await before.channel.delete(reason='No members left in the bot-created channel')
 
