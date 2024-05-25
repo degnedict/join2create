@@ -24,12 +24,10 @@ async def on_voice_state_update(member, before, after):
             reason='Created by JoinToCreate bot'
         )
         await member.move_to(new_channel)
-        # Mark the channel as created by the bot by adding a custom attribute
-        new_channel.created_by_bot = True
 
     if before.channel and len(before.channel.members) == 0 and before.channel.id != join_to_create_channel_id:
-        # Check if the channel was created by the bot before deleting it
-        if hasattr(before.channel, 'created_by_bot') and before.channel.created_by_bot:
+        # Check if the channel was created by the bot by checking its name
+        if before.channel.name.startswith('🔊'):
             await before.channel.delete(reason='No members left in the bot-created channel')
 
 bot.run(token)
