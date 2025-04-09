@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   discord-bot:
     image: git.degnedict.de/bene/join2create:latest
